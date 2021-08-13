@@ -1,3 +1,18 @@
 @import "_fonts.scss";
 
 $text: #E8E8E8;
+
+%i {
+  position: absolute;
+  content: 'i';
+  font-family: 'BerlingskeSerif-Italic';
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 112.69%;
+  color: #56575E;
+  background: linear-gradient(133.53deg, #29C59F 14.29%, #CFF9EF 83.97%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  text-align: center;
+}
