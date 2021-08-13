@@ -1,0 +1,14 @@
+@import "_header.scss";
+
+.top {
+  background-image: url('../images/top-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+// font-family: 'Roboto', sans-serif;
+
+
+@import "_media.scss";

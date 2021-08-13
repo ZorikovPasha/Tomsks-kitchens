@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'TTNorms-Regular';
+  src: url('../fonts/TTNorms-Regular.woff2') format('woff2'),
+  url('../fonts/TTNorms-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TTNorms-Medium';
+  src: url('../fonts/TTNorms-Medium.woff2') format('woff2'),
+  url('../fonts/TTNorms-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TTNorms-Bold';
+  src: url('../fonts/TTNorms-Bold.woff2') format('woff2'),
+  url('../fonts/TTNorms-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BerlingskeSerif-Italic';
+  src: url('../fonts/BerlingskeSerif-Italic.woff2') format('woff2'),
+  url('../fonts/BerlingskeSerif-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
