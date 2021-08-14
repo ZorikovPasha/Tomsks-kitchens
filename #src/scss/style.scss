@@ -742,7 +742,6 @@
   // .elements__list-box
 
   &__list-box {
-    position: absolute;
   }
 
   // .elements__depictions
@@ -887,6 +886,32 @@
 
   &__inner {
     padding-bottom: 72px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 359px;
+      height: 359px;
+      top: 62%;
+      left: -33%;
+      background-image: url('../images/cases-aside-2.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      width: 339px;
+      height: 339px;
+      top: 19%;
+      right: -35%;
+      background-image: url('../images/cases-aside-1.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   // .cases__title
