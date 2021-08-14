@@ -376,15 +376,1728 @@
         </div>
       </section>
 
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__inner">
+            <h1 class="catalog__title">Каталог кухонь на заказ</h1>
+            <div class="catalog__body">
+              <aside class="catalog__aside aside">
+                <div class="aside__main">
+                  <div class="aside__chosen">
+                    <button class="aside__chosen-reset">Сбросить фильтры</button>
+                  </div>
+                  <div class="aside__body">
+                    <div class="aside__title">Основные фильтры</div>
 
+                    <div class="aside__filter filter">
+                      <p class="filter__title">Cтоимость</p>
+                      <label class="filter__label">
+                        <input class="filter__radio-real" type="radio" name="price">
+                        <span class="filter__radio-fake"></span>
+                        <span class="filter__text">до 80 тыс. руб</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__radio-real" type="radio" name="price">
+                        <span class="filter__radio-fake"></span>
+                        <span class="filter__text"> от 80 тыс. руб до 120 тыс. руб</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__radio-real" type="radio" name="price">
+                        <span class="filter__radio-fake"></span>
+                        <span class="filter__text">от 120 тыс. руб до 160 тыс. руб</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__radio-real" type="radio" name="price">
+                        <span class="filter__radio-fake"></span>
+                        <span class="filter__text">от 160 тыс. руб до 200 тыс. руб</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__radio-real" type="radio" name="price">
+                        <span class="filter__radio-fake"></span>
+                        <span class="filter__text">от 200 тыс. руб до 250 тыс. руб</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__radio-real" type="radio" name="price">
+                        <span class="filter__radio-fake"></span>
+                        <span class="filter__text">от 250 тыс. руб до 300 тыс. руб</span>
+                      </label>
+                    </div>
+
+                    <div class="aside__rangeslider aside__rangeslider-square">
+                      <p class="filter__title">Площадь кухни</p>
+                      <input type="text" class="js-range-slider" name="my_range" value=""
+                      data-type="double"
+                      data-min="0"
+                      data-max="30"
+                      data-from="4"
+                      data-to="30"
+                      data-grid="true"/>  
+                    </div>
+
+                    <div class="aside__rangeslider aside__rangeslider-linear">
+                      <p class="filter__title">Погонные метры</p>
+                      <input type="text" class="js-range-slider" name="my_range" value=""
+                      data-type="double"
+                      data-min="0"
+                      data-max="10"
+                      data-from="2"
+                      data-to="10"
+                      data-grid="true"/>  
+                    </div>
+
+
+                    <div class="aside__filter filter">
+                      <p class="filter__title">Популярные категории</p>
+                      <label class="filter__label">
+                        <input class="filter__checkbox-real" type="checkbox">
+                        <span class="filter__checkbox-fake"></span>
+                        <span class="filter__text">Маленькие кухни</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__checkbox-real" type="checkbox">
+                        <span class="filter__checkbox-fake"></span>
+                        <span class="filter__text">Недорогие кухни</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__checkbox-real" type="checkbox">
+                        <span class="filter__checkbox-fake"></span>
+                        <span class="filter__text">Кухня-гостиная</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__checkbox-real" type="checkbox">
+                        <span class="filter__checkbox-fake"></span>
+                        <span class="filter__text">Кухня с подъемниками</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__checkbox-real" type="checkbox">
+                        <span class="filter__checkbox-fake"></span>
+                        <span class="filter__text">Подоконник со столешницей</span>
+                      </label>
+                    </div>
+
+                    <div class="aside__filter filter">
+                      <p class="filter__title">Стиль</p>
+                      <label class="filter__label">
+                        <input class="filter__radio-real" type="radio" name="style">
+                        <span class="filter__radio-fake"></span>
+                        <span class="filter__text">Классический</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__radio-real" type="radio" name="style">
+                        <span class="filter__radio-fake"></span>
+                        <span class="filter__text"> Современный</span>
+                      </label>
+                    </div>
+
+                    <div class="aside__filter filter">
+                      <p class="filter__title">Форма кухни</p>
+                      <label class="filter__label">
+                        <input class="filter__radio-real" type="radio" name="form">
+                        <span class="filter__radio-fake"></span>
+                        <span class="filter__text">Прямая</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__radio-real" type="radio" name="form">
+                        <span class="filter__radio-fake"></span>
+                        <span class="filter__text"> Угловая</span>
+                      </label>
+                      <label class="filter__label">
+                        <input class="filter__radio-real" type="radio" name="form">
+                        <span class="filter__radio-fake"></span>
+                        <span class="filter__text"> П-образная</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside__additional">
+                  <div class="aside__title">Дополнительные фильтры  </div>
+
+                  <div class="aside__filter filter">
+                    <div class="filter__line">
+                      <p class="filter__title drop-title">Особенности формы</p>
+                    </div>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">С барной стойкой</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">С островом</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">С антресолью</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Со встр. холодильником</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">С пеналом</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">С радиусными шкафами</span>
+                    </label>
+                  </div>
+                  <div class="aside__filter filter">
+                    <div class="filter__line">
+                      <p class="filter__title drop-title closed">Общий цвет кухни</p>
+                    </div>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="mainColor">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text">Светлые</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="mainColor">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Темные</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="mainColor">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Яркие</span>
+                    </label>
+                  </div>
+                  <div class="aside__filter filter">
+                    <div class="filter__line">
+                      <p class="filter__title drop-title closed">Поверхность фасада</p>
+                    </div>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="surface">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text">Глянцевые</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="surface">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Матовые</span>
+                    </label>
+                  </div>
+                  <div class="aside__filter filter">
+                    <div class="filter__line">
+                      <p class="filter__title drop-title closed">Цвет фасада</p>
+                    </div>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Темный низ/светлый верх</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Комбинированные</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Белые</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Серые</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Черные</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Зеленые</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Фиолетовые</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Голубые</span>
+                    </label>
+                  </div>
+                  <div class="aside__filter filter">
+                    <div class="filter__line">
+                      <p class="filter__title drop-title closed">Материал фартука</p>
+                    </div>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="material">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text">Кафель/керамогранит</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="material">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Стеновая панель из пластика</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="material">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Стекло с фотопечатью</span>
+                    </label>
+                  </div>
+                  <div class="aside__filter filter">
+                    <div class="filter__line">
+                      <p class="filter__title drop-title">Материал столешницы</p>
+                    </div>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="tableMaterial">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text">ДСП в пластике</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="tableMaterial">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Искусственный камень</span>
+                    </label>
+                  </div>
+                  <div class="aside__filter filter">
+                    <div class="filter__line">
+                      <p class="filter__title drop-title">Цвет столешницы</p>
+                    </div>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Древесные</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Белые</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Черные</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Светлые</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text"> Темные</span>
+                    </label>
+                  </div>
+                  <div class="aside__filter filter">
+                    <div class="filter__line">
+                      <p class="filter__title drop-title">Ручки</p>
+                    </div>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="handlers">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text">Ручки-скобы</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="handlers">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Без-ручек</span>
+                    </label>
+                  </div>
+                  <div class="aside__filter filter">
+                    <div class="filter__line">
+                      <p class="filter__title drop-title">Мойки</p>
+                    </div>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="sink">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text">Нержавеющая сталь</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="sink">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Керамогранит</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="sink">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Искуственный камень</span>
+                    </label>
+                  </div>
+                  <div class="aside__filter filter">
+                    <div class="filter__line">
+                      <p class="filter__title drop-title">Бытовая техника</p>
+                    </div>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="hood">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text">Встроенная вытяжка</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="hood">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Отдельная вытяжка</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="hood">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Отдельная плита</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__radio-real" type="radio" name="hood">
+                      <span class="filter__radio-fake"></span>
+                      <span class="filter__text"> Встроенная духовка/варочная панель</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Посудомоечная машина</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text">Встроенная микроволновка</span>
+                    </label>
+                    <label class="filter__label">
+                      <input class="filter__checkbox-real" type="checkbox">
+                      <span class="filter__checkbox-fake"></span>
+                      <span class="filter__text"> Телевизор</span>
+                    </label>
+                  </div>
+                </div>
+              </aside>
+
+              <div class="catalog__box">
+                <div class="catalog__controls">
+                  <div class="catalog__control">
+                    <p class="catalog__control-text">Найдено:</p>
+                    <button class="catalog__score">214</button>
+                  </div>
+                  <div class="catalog__control">
+                    <p class="catalog__control-text">Сортировать:</p>
+                    <button class="catalog__score">по умолчанию</button>
+                  </div>
+                  <div class="catalog__control">
+                    <p class="catalog__control-text">Вид:</p>
+                    <button class="catalog__score">3 модели в ряд</button>
+                  </div>
+                  <div class="catalog__search">
+                    <input class="catalog__search-input" type="text" placeholder="Введите номер модели">
+                    <button class="catalog__search-btn">
+                      <img class="catalog__search-btnimg" src="images/search-icon.svg" alt="">
+                    </button>
+                  </div>
+                </div>
+                <div class="catalog__items">
+
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/1.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/2.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/3.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/4.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/5.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/6.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/7.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/8.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/9.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/10.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/11.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/12.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/13.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/14.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/15.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/16.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/17.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/18.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/19.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/20.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/21.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/22.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/23.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-wrapper">
+                    <div class="catalog__item" href="#">
+                      <button class="catalog__item-like"></button>
+                      <p class="catalog__item-title">Кухня МДФ в ПВХ «Модель 154»</p>
+                      <img class="catalog__item-img" src="images/catalog/24.jpg" alt="">
+                      <div class="catalog__item-hover hover-item">
+                        <p class="hover-item__title">Кухня из пластика «Модель 1»</p>
+                        <a class="hover-item__link" href="#">Заказать кухню</a>
+                        <a class="hover-item__btn" href="#">Расчет цены</a>
+                        <a class="hover-item__more" href="#">Узнать подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="catalog__more-wrapper">
+                  <button class="catalog__more">
+                    Показать еще 30 кухонь
+                  </button>  
+                </div>
+                <div class="pagination">
+                  <ul class="pagination-list">
+                    <li class="pagination-list__item active">
+                      <a class="pagination-list__link" href="#">1</a>
+                    </li>
+                    <li class="pagination-list__item">
+                      <a class="pagination-list__link" href="#">2</a>
+                    </li>
+                    <li class="pagination-list__item">
+                      <a class="pagination-list__link" href="#">3</a>
+                    </li>
+                    <li class="pagination-list__item">
+                      <a class="pagination-list__link" href="#">4</a>
+                    </li>
+                    <li class="pagination-list__item">
+                      <a class="pagination-list__link" href="#">5</a>
+                    </li>
+                    <li class="pagination-list__item">
+                      <a class="pagination-list__link" href="#">6</a>
+                    </li>
+                    <li class="pagination-list__item">
+                      <a class="pagination-list__link" href="#">7</a>
+                    </li>
+                    <li class="pagination-list__item">
+                      <a class="pagination-list__link" href="#">8</a>
+                    </li>
+                    <li class="pagination-list__item">
+                      <a class="pagination-list__link" href="#">
+                        <img class="pagination-list__next" src="images/pagination-arr.svg" alt="">
+                      </a>
+                    </li>
+                    <li class="pagination-list__item">
+                      <a class="pagination-list__link" href="#">
+                        <img class="pagination-list__end" src="images/pagination-arrs.svg" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="elements">
+        <div class="container">
+          <div class="elements__inner">
+            <h3 class="elements__title">Основные элементы кухонь.
+              Их особенности и цена</h3>
+            <div class="elements__body">
+              <div class="elements__images">
+                <img src="images/elements-decor.png" alt="">
+              </div>
+              <div class="elements__illustration">
+                <img src="images/elements-illustration.png" alt="">
+
+                <a class="elements__illustration-dot dot-1" href="#depict-1">
+                  <img src="images/dot.png" alt="">
+                </a>
+                <a class="elements__illustration-dot dot-2" href="#depict-2">
+                  <img src="images/dot.png" alt="">
+                </a>
+                <a class="elements__illustration-dot dot-3" href="#depict-3">
+                  <img src="images/dot.png" alt="">
+                </a>
+                <a class="elements__illustration-dot dot-4" href="#depict-4">
+                  <img src="images/dot.png" alt="">
+                </a>
+                <a class="elements__illustration-dot dot-5" href="#depict-5">
+                  <img src="images/dot.png" alt="">
+                </a>
+                <a class="elements__illustration-dot dot-6" href="#depict-6">
+                  <img src="images/dot.png" alt="">
+                </a>
+                <a class="elements__illustration-dot dot-7" href="#depict-7">
+                  <img src="images/dot.png" alt="">
+                </a>
+                <a class="elements__illustration-dot dot-8" href="#depict-8">
+                  <img src="images/dot.png" alt="">
+                </a>
+                <a class="elements__illustration-dot dot-9" href="#depict-9">
+                  <img src="images/dot.png" alt="">
+                </a>
+                <a class="elements__illustration-dot dot-10" href="#depict-10">
+                  <img src="images/dot.png" alt="">
+                </a>
+                <a class="elements__illustration-dot dot-11" href="#depict-11">
+                  <img src="images/dot.png" alt="">
+                </a>
+
+              </div>
+              <div class="elements__list-box list-box">
+                <ul class="list-box__list">
+                  <li class="list-box__item">
+                    <a class="list-box__link" href="#depict-1">Фурнитура подъемных дверей</a>
+                  </li>
+                  <li class="list-box__item">
+                    <a class="list-box__link" href="#depict-2">Фурнитура распашных дверей</a>
+                  </li>
+                  <li class="list-box__item">
+                    <a class="list-box__link" href="#depict-3">Столешница</a>
+                  </li>
+                  <li class="list-box__item">
+                    <a class="list-box__link" href="#depict-4">Ручки</a>
+                  </li>
+                  <li class="list-box__item">
+                    <a class="list-box__link" href="#depict-5">Функциональное наполнение</a>
+                  </li>
+                  <li class="list-box__item">
+                    <a class="list-box__link" href="#depict-6">Выдвижные ящики</a>
+                  </li>
+                  <li class="list-box__item">
+                    <a class="list-box__link" href="#depict-7">Складной подъемник</a>
+                  </li>
+                  <li class="list-box__item">
+                    <a class="list-box__link" href="#depict-8">Верхний шкаф</a>
+                  </li>
+                  <li class="list-box__item">
+                    <a class="list-box__link" href="#depict-9">Фартук</a>
+                  </li>
+                  <li class="list-box__item">
+                    <a class="list-box__link" href="#depict-10">Корпус из ЛДСП</a>
+                  </li>
+                  <li class="list-box__item">
+                    <a class="list-box__link" href="#depict-11">Материал фасада</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="elements__depictions">
+                <div class="elements__depiction" id="depict-1">
+                  <div class="elements__depiction-line">
+                    <h6 class="elements__depiction-title">Фурнитура подъемных дверей</h6>
+                    <div class="elements__depiction-close"></div>
+                  </div>
+                  <div class="elements__depiction-box">
+                    <div class="elements__depiction-text">
+                      What is Lorem Ipsum?
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Why do we use it?
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Where does it come from?
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                  </div>
+                </div>
+                <div class="elements__depiction" id="depict-2">
+                  <div class="elements__depiction-line">
+                    <h6 class="elements__depiction-title">Фурнитура распашных дверей</h6>
+                    <div class="elements__depiction-close"></div>
+                  </div>
+
+                  <div class="elements__depiction-box">
+                    <div class="elements__depiction-text">
+                      What is Lorem Ipsum?
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Why do we use it?
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Where does it come from?
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                  </div>
+                </div>
+                <div class="elements__depiction" id="depict-3">
+                  <div class="elements__depiction-line">
+                    <h6 class="elements__depiction-title">Столешница</h6>
+                    <div class="elements__depiction-close"></div>
+                  </div>
+
+                  <div class="elements__depiction-box">
+                    <div class="elements__depiction-text">
+                      What is Lorem Ipsum?
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Why do we use it?
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Where does it come from?
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                  </div>
+                </div>
+                <div class="elements__depiction" id="depict-4">
+                  <div class="elements__depiction-line">
+                    <h6 class="elements__depiction-title">Ручки</h6>
+                    <div class="elements__depiction-close"></div>
+                  </div>
+
+                  <div class="elements__depiction-box">
+                    <div class="elements__depiction-text">
+                      What is Lorem Ipsum?
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Why do we use it?
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Where does it come from?
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                  </div>
+                </div>
+                <div class="elements__depiction" id="depict-5">
+                  <div class="elements__depiction-line">
+                    <h6 class="elements__depiction-title">Функциональное наполнение</h6>
+                    <div class="elements__depiction-close"></div>
+                  </div>
+
+                  <div class="elements__depiction-box">
+                    <div class="elements__depiction-text">
+                      What is Lorem Ipsum?
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Why do we use it?
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Where does it come from?
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                  </div>
+                </div>
+                <div class="elements__depiction" id="depict-6">
+                  <div class="elements__depiction-line">
+                    <h6 class="elements__depiction-title">Выдвижные ящики</h6>
+                    <div class="elements__depiction-close"></div>
+                  </div>
+
+                  <div class="elements__depiction-box">
+                    <div class="elements__depiction-text">
+                      What is Lorem Ipsum?
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Why do we use it?
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Where does it come from?
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                  </div>
+                </div>
+                <div class="elements__depiction" id="depict-7">
+                  <div class="elements__depiction-line">
+                    <h6 class="elements__depiction-title">Складной подъемник</h6>
+                    <div class="elements__depiction-close"></div>
+                  </div>
+
+                  <div class="elements__depiction-box">
+                    <div class="elements__depiction-text">
+                      What is Lorem Ipsum?
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Why do we use it?
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Where does it come from?
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                  </div>
+                </div>
+                <div class="elements__depiction" id="depict-8">
+                  <div class="elements__depiction-line">
+                    <h6 class="elements__depiction-title">Верхний шкаф</h6>
+                    <div class="elements__depiction-close"></div>
+                  </div>
+
+                  <div class="elements__depiction-box">
+                    <div class="elements__depiction-text">
+                      What is Lorem Ipsum?
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Why do we use it?
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Where does it come from?
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                  </div>
+                </div>
+                <div class="elements__depiction" id="depict-9">
+                  <div class="elements__depiction-line">
+                    <h6 class="elements__depiction-title">Фартук</h6>
+                    <div class="elements__depiction-close"></div>
+                  </div>
+
+                  <div class="elements__depiction-box">
+                    <div class="elements__depiction-text">
+                      What is Lorem Ipsum?
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Why do we use it?
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Where does it come from?
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                  </div>
+                </div>
+                <div class="elements__depiction" id="depict-10">
+                  <div class="elements__depiction-line">
+                    <h6 class="elements__depiction-title">Корпус из ЛДСП</h6>
+                    <div class="elements__depiction-close"></div>
+                  </div>
+
+                  <div class="elements__depiction-box">
+                    <div class="elements__depiction-text">
+                      What is Lorem Ipsum?
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Why do we use it?
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Where does it come from?
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                  </div>
+                </div>
+                <div class="elements__depiction" id="depict-11">
+                  <div class="elements__depiction-line">
+                    <h6 class="elements__depiction-title">Материал фасада</h6>
+                    <div class="elements__depiction-close"></div>
+                  </div>
+                  <div class="elements__depiction-box">
+                    <div class="elements__depiction-text">
+                      What is Lorem Ipsum?
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Why do we use it?
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      Where does it come from?
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                      </p>
+                    </div>
+                    <div class="elements__depiction-text">
+                      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cases">
+        <div class="container">
+          <div class="cases__inner">
+            <h3 class="cases__title">Примеры проектов кухонь разной ценовой категории</h3>
+            <div class="cases__tabs">
+              <button class="cases__tab cases__tab-left" data-filter=".straight">Прямые</button>
+              <button class="cases__tab"data-filter=".corner">Угловые</button>
+              <button class="cases__tab cases__tab-right" data-filter=".shaped">П - образные</button>
+            </div>
+            <div class="cases__items">
+              <div class="cases__item mix straight">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+              <div class="cases__item mix corner">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+              <div class="cases__item mix shaped">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+              <div class="cases__item mix straight">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+              <div class="cases__item mix corner">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+              <div class="cases__item mix shaped">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+
+              <div class="cases__item mix straight">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+              <div class="cases__item mix corner">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+              <div class="cases__item mix shaped">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+
+              <div class="cases__item mix straight">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/1.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+              <div class="cases__item mix corner">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/2.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+              <div class="cases__item mix shaped">
+                <div class="cases__item-slider slider-item">
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                  <a class="slider-item__item" href="#">
+                    <img class="slider-item__img" src="images/cases/3.jpg" alt="">
+                  </a>
+                </div>
+                <a class="cases__item-name" href="#">Кухня МДФ в эмали «Модель 281»</a>
+                <div class="cases__item-types">
+                  <div class="cases__item-type">Эконом</div>
+                  <div class="cases__item-type">Стандарт</div>
+                  <div class="cases__item-type active">Престиж</div>
+                  <div class="cases__item-type">Премиум</div>
+                </div>
+                <div class="cases__item-line underline">
+                  <p class="cases__item-size">Размер</p>
+                  <p class="cases__item-size">Стоимость</p>
+                </div>
+                <div class="cases__item-line">
+                  <p class="cases__item-num">2300 x 3000 мм</p>
+                  <p class="cases__item-num">110 000 ₽</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="catalog__more-wrapper">
+              <button class="catalog__more">
+                Показать еще 30 кухонь
+              </button>  
+            </div>
+            <div class="pagination">
+              <ul class="pagination-list">
+                <li class="pagination-list__item active">
+                  <a class="pagination-list__link" href="#">1</a>
+                </li>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">2</a>
+                </li>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">3</a>
+                </li>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">4</a>
+                </li>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">5</a>
+                </li>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">6</a>
+                </li>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">7</a>
+                </li>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">8</a>
+                </li>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">
+                    <img class="pagination-list__next" src="images/pagination-arr.svg" alt="">
+                  </a>
+                </li>
+                <li class="pagination-list__item">
+                  <a class="pagination-list__link" href="#">
+                    <img class="pagination-list__end" src="images/pagination-arrs.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 
+
   <footer class="footer">
-    <div class="container">
-      
+    <div class="container-fluid">
+      <div class="footer__inner">
+        <div class="container">
+          <div class="footer__body">
+            <h3 class="footer__title">Видео наших проектов</h3>
+            <div class="footer__videos">
+              <div class="footer__video">
+                <img class="footer__video-img" src="images/video-img/1.jpg" alt="">
+                <a class="footer__video-link" href="#">Посмотреть</a>
+                <div class="footer__video-hover video-hover">
+                  <h6 class="video-hover__title">Топ 15 ошибок проектирования кухни</h6>
+                  <a class="video-hover__link" href="#">Смотреть сейчас</a>
+                  <p class="video-hover__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                  </p>
+                </div>
+              </div>
+              <div class="footer__video">
+                <img class="footer__video-img" src="images/video-img/2.jpg" alt="">
+                <a class="footer__video-link" href="#">Посмотреть</a>
+                <div class="footer__video-hover video-hover">
+                  <h6 class="video-hover__title">Топ 15 ошибок проектирования кухни</h6>
+                  <a class="video-hover__link" href="#">Смотреть сейчас</a>
+                  <p class="video-hover__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                  </p>
+                </div>
+              </div>
+              <div class="footer__video">
+                <img class="footer__video-img" src="images/video-img/1.jpg" alt="">
+                <a class="footer__video-link" href="#">Посмотреть</a>
+                <div class="footer__video-hover video-hover">
+                  <h6 class="video-hover__title">Топ 15 ошибок проектирования кухни</h6>
+                  <a class="video-hover__link" href="#">Смотреть сейчас</a>
+                  <p class="video-hover__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                  </p>
+                </div>
+              </div>
+              <div class="footer__video">
+                <img class="footer__video-img" src="images/video-img/2.jpg" alt="">
+                <a class="footer__video-link" href="#">Посмотреть</a>
+                <div class="footer__video-hover video-hover">
+                  <h6 class="video-hover__title">Топ 15 ошибок проектирования кухни</h6>
+                  <a class="video-hover__link" href="#">Смотреть сейчас</a>
+                  <p class="video-hover__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                  </p>
+                </div>
+              </div>
+              <div class="footer__video">
+                <img class="footer__video-img" src="images/video-img/1.jpg" alt="">
+                <a class="footer__video-link" href="#">Посмотреть</a>
+                <div class="footer__video-hover video-hover">
+                  <h6 class="video-hover__title">Топ 15 ошибок проектирования кухни</h6>
+                  <a class="video-hover__link" href="#">Смотреть сейчас</a>
+                  <p class="video-hover__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                  </p>
+                </div>
+              </div>
+              <div class="footer__video">
+                <img class="footer__video-img" src="images/video-img/2.jpg" alt="">
+                <a class="footer__video-link" href="#">Посмотреть</a>
+                <div class="footer__video-hover video-hover">
+                  <h6 class="video-hover__title">Топ 15 ошибок проектирования кухни</h6>
+                  <a class="video-hover__link" href="#">Смотреть сейчас</a>
+                  <p class="video-hover__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
+
   
   </div>
 
@@ -394,67 +2107,3 @@
 </body>
 
 </html>
-
-<!-- 
-      <section class="interest">
-        <div class="container">
-          <div class="interest__inner">
-            <div class="interest__column interest__column-left">
-              <h1 class="interest__title">Что вам может быть интересно?</h1>
-              <div class="interest__column-box box-column">
-
-                <div class="box-column__column box-column__column-left">
-                  <div class="interest-item__kitchens">
-                    <img class="interest-item__kitchens-img" src="images/interest/kitchens.png" alt="">
-                    <div class="interest-item__title">Каталог кухонь</div>
-                  </div>
-                  <div class="interest-item__cases">
-                    <img class="interest-item__cases-img" src="images/interest/cases.png" alt="">
-                    <div class="interest-item__title">Примеры проектов с ценами</div>
-                  </div>
-                </div>
-
-                <div class="box-column__column box-column__column-right">
-                  <div class="interest-item__materials">
-                    <img class="interest-item__materials-img" src="images/interest/materials.png" alt="">
-                    <div class="interest-item__title">Каталог материалов</div>
-                  </div>
-                  <div class="interest-item__elements">
-                    <img class="interest-item__elements-img" src="images/interest/elements.png" alt="">
-                    <div class="interest-item__title">Элементы кухни</div>
-                  </div>
-                  <div class="interest-item__constructor">
-                    <img class="interest-item__constructor-img" src="images/interest/constructor.png" alt="">
-                    <div class="interest-item__title">Конструктор кухонь</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="interest__columm columm-right">
-              <div class="columm-right__order">
-                <img class="columm-right__order-img" src="images/interest/order.png" alt="">
-                <div class="interest-item__title">Как заказать кухню</div>
-              </div>
-              <div class="columm-right__calc">
-                <img class="columm-right__calc-img" src="images/interest/calc.png" alt="">
-                <div class="interest-item__title">калькулятор цены кухонь</div>
-              </div>
-              <div class="columm-right__sales">
-                <img class="columm-right__sales-img" src="images/interest/sales.png" alt="">
-                <div class="columm-right__sales-content">
-                  <div class="columm-right__sales-title">Акции</div>
-                  <div class="columm-right__sales-procent">%</div>  
-                </div>
-              </div>
-              <div class="columm-right__about">
-                <img class="columm-right__about-img" src="images/interest/about.png" alt="">
-                <div class="interest-item__title">информация о компании</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
- -->

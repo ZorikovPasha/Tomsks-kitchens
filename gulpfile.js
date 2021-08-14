@@ -11,10 +11,10 @@ var gulp = require('gulp'),
 
 // сбор css фалов библиотек в один файл 
 
-gulp.task('cssLibsMinic', function() {
+gulp.task('cssLibsMinify', function() {
   return gulp.src([
-    // 'node_modules/slick-carousel/slick/slick.css',
-    // 'node_modules/ion-rangeslider/css/ion.rangeSlider.min.css',
+    'node_modules/slick-carousel/slick/slick.css',
+    'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
     // 'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
     // 'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
     // 'node_modules/rateyo/lib/cjs/rateyo.min.css'
@@ -27,13 +27,13 @@ gulp.task('cssLibsMinic', function() {
 
 // сбор js фалов библиотек в один файл 
 
-gulp.task('jsLibsMinic', function() {
+gulp.task('jsLibsMinify', function() {
   return gulp.src([
-    // 'node_modules/slick-carousel/slick/slick.js',
-    // 'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
     // 'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
     // 'node_modules/rateyo/lib/cjs/rateyo.min.js',
-    // 'node_modules/mixitup/dist/mixitup.min.js',
+    'node_modules/mixitup/dist/mixitup.min.js',
     // 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
   ])
     .pipe(concat('libs.min.js'))
@@ -113,6 +113,6 @@ gulp.task('watch', function() {
   gulp.watch('#src/fonts/*', gulp.parallel('carryFonts'));
 })
 
-gulp.task('minicAllLibs', gulp.parallel('cssLibsMinic', 'jsLibsMinic'))
+gulp.task('minifyAllLibs', gulp.parallel('cssLibsMinify', 'jsLibsMinify'))
 
 gulp.task('default', gulp.parallel('sassConvert', 'imageMin', 'carryFonts', 'watch', 'browsersync'));
