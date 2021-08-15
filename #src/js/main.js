@@ -2,7 +2,8 @@ $(function(){
 
   $('.drop-title').on('click', function() {
     $(this).toggleClass('closed');
-    $(this).parent().siblings('.filter__label').slideToggle();
+    $(this).parent().parent('.filter').toggleClass('minimized');
+    // $(this).parent().siblings('.filter__label').slideToggle();
   })
 
   $(".js-range-slider").ionRangeSlider({});
@@ -18,6 +19,8 @@ $(function(){
     $(this).children().children('.hover-item').removeClass('appeared')
   });
 
+
+  /*
   let $chosenItem = $('<button class="aside__chosen-item"></button>');
   isEmpty = false;
 
@@ -39,7 +42,7 @@ $(function(){
       isEmpty = true;
     }
   })
-
+*/
 
   $('.list-box__link').on('click', function(e) {
     e.preventDefault();
@@ -90,6 +93,7 @@ $(function(){
 
   var mixer = mixitup('.cases__items', {
     load: {
+      filter: ".corner",
     }
   });
 
@@ -99,5 +103,19 @@ $(function(){
   }, function () {
     $(this).children('.video-hover').removeClass('appeared')
   });
+
+  $('.menu-btn').on('click', function(e) {
+    $('.menu-btn').toggleClass('active');
+    $('.header__top-inner').toggleClass('active');
+    $('body').toggleClass('lock');
+  })
+
+  $('.aside__title-close').on('click', function() {
+    $('.aside').addClass('closed');
+  })
+
+  $('.catalog__control--filter').on('click', function() {
+    $('.aside').toggleClass('closed');
+  })
 
 });

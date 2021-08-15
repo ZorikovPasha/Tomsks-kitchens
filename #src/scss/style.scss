@@ -133,7 +133,7 @@
   }
 
   &__benefit + &__benefit {
-    border-left: 1px solid rgba(233, 249, 245, 0.2);;
+    border-left: 1px solid rgba(233, 249, 245, 0.2);
   }
 
   // .top__benefit-box
@@ -300,8 +300,9 @@
   top: 0px;
   right: -10px;
   @extend %i;
-  background: linear-gradient(136.27deg, rgba(40, 186, 151, 0.2) 15.69%, rgba(179, 239, 225, 0.2) 86.04%);}
-
+  color: #fff;
+  background: linear-gradient(136.27deg, rgba(40, 186, 151, 0.2) 15.69%, rgba(179, 239, 225, 0.2) 86.04%);
+}
 .benefit1__i:after {
   cursor: pointer;
 
@@ -325,7 +326,62 @@
   @extend %i;
 }
 
+.mob-nav  {
+  display: none;
+}
 
+.mob-nav {
+
+  background-color: #fff;
+  padding: 14px 0;
+
+  // .mob-nav__items
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .mob-nav__item
+
+  &__item {
+    position: relative;
+    text-align: center;
+  }
+
+  // .mob-nav__img
+
+  &__img {
+    margin-bottom: 4px;
+  }
+
+  // .mob-nav__nu
+
+  &__num {
+    position: absolute;
+    top: -4px;
+    right: -3px;
+    font-size: 12.1176px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #575B5E;
+    background: linear-gradient(180deg, #F5D89F 0%, #DDB15C 100%);
+    border: 1.21176px solid #F3CD82;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  // .mob-nav__title
+
+  &__title {
+    font-size: 8px;
+    line-height: 117%;
+    color: #575B5E;
+
+  }
+}
 
 .interest {
 
@@ -443,12 +499,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 6px;
   }
 
   &__kitchens-img {
     left: -13px;
-    right: -8px;
     width: calc(100% + 13px);
+
   }
 
   &__title {
@@ -456,11 +513,11 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 58px;
+    min-height: 58px;
     background: linear-gradient(180deg, rgba(65, 65, 65, 0.459) 0%, rgba(43, 43, 43, 0.9) 100%);
     backdrop-filter: blur(26px);
     border-radius: 0px 0px 5px 5px;
-    padding: 18px 0 19px;
+    padding: 18px 10px 19px;
     font-weight: bold;
     font-size: 16px;
     line-height: 25px;
@@ -468,6 +525,9 @@
     text-transform: uppercase;
     color: #F3F3F3;
     text-align: center;
+    &.title-left {
+      text-align: left;
+    }
   }
 }
 
@@ -498,6 +558,7 @@
     position: relative;
     padding-top: 50%;
     margin-bottom: 20px;
+    border-radius: 6px;
   }
 
   &__sales-content {
@@ -509,6 +570,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 6px;
   }
 
   &__sales-title {
@@ -521,7 +583,7 @@
     color: #F3F3F3;
   }
 
-  &__sales-procent {
+  &__sales-percent {
     font-weight: bold;
     font-size: 130px;
     line-height: 130px;
@@ -529,6 +591,7 @@
     text-transform: uppercase;
     color: #F3F3F3;
     opacity: 0.51;
+    border-radius: 6px;
   }
 
   // .columm-right__calc
@@ -538,6 +601,7 @@
     box-shadow: 0px 2px 8px rgba(138, 143, 144, 0.49), 0px 11px 10px -8px rgba(138, 143, 145, 0.8);
     position: relative;
     padding-top: 50%;
+    border-radius: 6px;
     margin-bottom: 20px;
     margin-left: 20px;
   }
@@ -561,12 +625,18 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 6px;
   }
 
 
   &__calc-img {
     right: -20px;
     width: calc(100% + 20px);
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
@@ -882,6 +952,8 @@
 
 .cases {
 
+  padding-top: 30px;
+
   // .cases__inner
 
   &__inner {
@@ -928,6 +1000,14 @@
     text-align: center;
   }
 
+  &__subtitle {
+    text-align: center;
+    display: none;
+    font-size: 8px;
+    line-height: 8px;
+    margin-bottom: 10px;
+  }
+
   // .cases__tabs
 
   &__tabs {
@@ -972,7 +1052,8 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 30.8%);
-    grid-template-rows: minmax(auto, 456px);
+    // grid-template-rows: minmax(auto, 456px);
+    grid-template-rows: 1fr;
     grid-gap: 54px 12px;
   }
 
@@ -992,14 +1073,15 @@
 
   &__item-name {
     position: absolute;
-    bottom: 128px;
+    bottom: 145px;
     left: 0;
     right: 0;
     font-style: normal;
     font-weight: 500;
-    font-size: 20.5921px;
+    font-size: 20px;
     line-height: 110%;
     font-family: 'TTNorms-Medium';
+    text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     padding: 14px 10px 15px;
@@ -1080,6 +1162,7 @@
     display: block;
     opacity: 1;
     transition: all .3s;
+    position: relative;
     &:hover {
       opacity: .8;
     }
@@ -1089,7 +1172,7 @@
 
   &__img {
     width: 100%;
-    height: 337px;
+    max-height: 337px;
     object-fit: cover;
     border-radius: 8px;
   }
@@ -1098,7 +1181,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 2px;
+    bottom: 3px;
     text-align: center;
     li {
       display: inline-block;

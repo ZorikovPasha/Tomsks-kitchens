@@ -4,6 +4,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   height: 100%;
+  overflow-x: hidden;
 }
 
 *, 
@@ -48,6 +49,7 @@ button:active {
   flex-direction: column;
   min-height: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 .main {

@@ -12,7 +12,7 @@
       left: 0;
       right: 0;
       z-index: 3;
-      min-height: 588px;
+      min-height: 84%;
       background-image: url('../images/footer-bg.jpg');
       background-position: center;
       background-repeat: no-repeat;
@@ -117,7 +117,7 @@
 
   &__link {
     font-weight: bold;
-    font-size: 22.0519px;
+    font-size: 22px;
     line-height: 110%;
     letter-spacing: 0.02em;
     margin-bottom: 25px;
@@ -142,5 +142,53 @@
     line-height: 112.69%;
     color: #FFFFFF;
     max-width: 313px;
+  }
+}
+
+
+@media (max-width:1140px) {
+  .video-hover__title {
+    font-size: 15px;
+    line-height: 16px;
+    padding: 0 30px;
+  }
+  .video-hover {
+    padding-top: 25px;
+  }
+  .video-hover__link  {
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width:992px) {
+  .video-hover {
+    display: none;
+  }
+  .footer__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer__videos {
+    grid-template-columns: repeat(2, minmax(auto, 49%) );
+    grid-template-rows: repeat( minmax(auto, 297px) );
+  }
+}
+
+@media (max-width:440px) {
+  .footer__title {
+    font-size: 23px;
+    line-height: 25px;
+    margin-bottom: 23px;
+  }
+  .footer__video-link {
+    font-size: 8px;
+    padding: 5px 5px;
+  }
+  .footer__body {
+    padding-bottom: 34px;
   }
 }
