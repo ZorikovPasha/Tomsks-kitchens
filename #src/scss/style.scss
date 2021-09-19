@@ -332,6 +332,13 @@
 
 .mob-nav {
 
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
   background-color: #fff;
   padding: 14px 0;
 
@@ -717,9 +724,10 @@
   // .elements__body
 
   &__body {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
-    position: relative;
     margin-left: -330px;
   }
 
@@ -823,8 +831,11 @@
     width: 100%;
     right: -3px;
     top: 60px;
-    &.visible {
-      display: block;
+
+    @media (max-width:700px) {
+      .elements__depictions.visible {
+        display: block;
+      }
     }
   }
 
@@ -947,6 +958,11 @@
       }
     }
   }
+
+  &__text {
+    display: none;
+    margin-top: 15px;
+  }
 }
 
 
@@ -1061,11 +1077,13 @@
 
   &__item {
     position: relative;
+    height: auto;
   }
 
   // .cases__item-slider
 
   &__item-slider {
+    height: auto;
     border-radius: 8px;
   }
 
@@ -1205,8 +1223,6 @@
 
 }
 
-
-// font-family: 'Roboto', sans-serif;
 
 @import "_catalogue.scss";
 @import "_rangeslider.scss";

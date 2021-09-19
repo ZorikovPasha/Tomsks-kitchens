@@ -81,6 +81,12 @@ $(function(){
     }
   })
 
+  $('.list-box__link').on('click', function() {
+    $(this).siblings('.list-box__text').slideToggle()
+  })
+
+  $('.list-box__text').slideUp()
+
   $('.cases__item-slider').slick({
     arrows: false,
     dots: true,
